@@ -14,5 +14,21 @@
 Тебе может понадобится модуль random, цикл while и ветвления
 """
 
-if __name__ == '__main__':
-    pass
+import random
+guess_number = random.randint(0, 1000000)
+print(guess_number)
+input_number = input('Привет! Попробуй угадать число от 0 до 1млн:\n')
+while guess_number != input_number:
+    if 'exit' in input_number:
+        break
+    elif int(input_number.isdigit()) == 0 :
+        input_number = input('Введите число! Попробуй еще:\n')
+    elif int(input_number) > guess_number:
+        input_number = input('Загаданное число меньше! Попробуй еще:\n')
+    elif int(input_number) < guess_number:
+            input_number = input('Загаданное число больше! Попробуй еще:\n')
+    elif int(input_number) > 1000000 or int(input_number) < 0 :
+            input_number = input('Диапазон числа от 0 до 1млн! Попробуй еще:\n')
+    else:
+        print('Вы угадали! Заберите приз по ссылке: clck.ru/Rnw7n')
+        break
