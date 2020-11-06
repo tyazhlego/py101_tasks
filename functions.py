@@ -34,3 +34,25 @@ check_keyword(input_line = input('Введите строку для прове�
 # число, строка, булевый, None, список, кортеж, множество, словарь
 # пример: get_type("что-то") возвращает "Это строка."
 # пример2: get_type(42) возвращает "Это словарь."
+def get_type(input_type):
+    rus_type = type(input_type)
+    if 'int' in str(rus_type) or 'long' in str(rus_type) or 'float' in str(rus_type) or 'complex' in str(rus_type):
+        print('Это число')
+    elif 'bool' in str(rus_type):
+        print('Это булевое')
+    elif 'str' in str(rus_type):
+        print('Это строка')
+    elif 'NoneType' in str(rus_type):
+        print('Это None')
+    elif 'list' in str(rus_type):
+        print('Это список')
+    elif 'tuple' in str(rus_type):
+        print('Это кортеж')
+    elif 'set' in str(rus_type):
+        print('Это множество')
+    elif 'dict' in str(rus_type):
+        print('Это словарь')
+    else:
+        print('НЕИЗВЕСТНЫЙ ТИП')
+input_type = None
+get_type(input_type)
