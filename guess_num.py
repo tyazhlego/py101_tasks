@@ -13,6 +13,8 @@
 
 Тебе может понадобится модуль random, цикл while и ветвления
 """
+if __name__ == '__main__':
+    pass
 
 import random
 guess_number = random.randint(0, 1000000)
