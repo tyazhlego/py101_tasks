@@ -11,4 +11,4 @@ pass_input = input('Введите пароль\n')
 if len(pass_input) > 7 and int(pass_input.isdigit()) == 0 and int(pass_input.isalpha()) == 0:
     print('сложный')
 else:
-    print('легко')
+    print('простой')
