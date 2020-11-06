@@ -5,7 +5,8 @@
 Сложным считается пароль, состоящий как минимум из 8-ми символов,
 включая цифры и алфавитные символы
 """
-
+if __name__ == '__main__':
+    pass
 
 pass_input = input('Введите пароль\n')
 if len(pass_input) > 7 and int(pass_input.isdigit()) == 0 and int(pass_input.isalpha()) == 0:
