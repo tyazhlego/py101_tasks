@@ -7,6 +7,15 @@
 
 Тебе может понадобиться цикл for и ветвления
 """
-
 if __name__ == '__main__':
     pass
+
+for n in range(1, 101):
+    if n % 15 == 0:
+        print('zip-zap')
+    elif n % 3 == 0:
+        print('zip')
+    elif n % 5 == 0:
+        print('zap')
+    else:
+        print(n)
